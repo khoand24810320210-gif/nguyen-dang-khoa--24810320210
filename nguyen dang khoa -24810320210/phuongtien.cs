@@ -33,7 +33,7 @@ namespace nguyen_dang_khoa__24810320210
             {
                 int currentYear = DateTime.Now.Year;
                 if (value < 1900 || value > currentYear)
-                    throw new ArgumentException($"Năm sản xuất phải từ 1900 đến {currentYear}!");
+                    throw new ArgumentException("Năm sản xuất không hợp lệ!");
                 _namSanXuat = value;
             }
         }
